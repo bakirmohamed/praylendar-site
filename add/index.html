@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join me on Praylendar</title>
+  <meta name="description" content="A friend invited you to Praylendar, the iPhone prayer tracker. Add each other to see your day and remind each other to pray."><meta name="robots" content="noindex, follow">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Praylendar"><meta property="og:title" content="Join me on Praylendar"><meta property="og:description" content="Add me as a friend so we can remind each other to pray."><meta property="og:image" content="https://praylendar.com/images/og-praylendar.jpg">
+  <link rel="icon" href="../images/praylendar-icon.png"><link rel="apple-touch-icon" href="../images/praylendar-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Paytone+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" data-header><div class="nav-shell"><a class="brand" href="../"><img src="../images/praylendar-icon.png" alt="" width="42" height="42"><span class="brand-word">praylendar</span></a></div></header>
+  <main class="subpage-main">
+    <section class="subpage-hero section-pad"><p class="eyebrow">FRIEND INVITE</p><h1>Join me on<br><span>Praylendar.</span></h1><p data-invite-line>A friend invited you to track the five daily prayers together and remind each other to pray.</p></section>
+    <article class="content-shell legal-copy">
+      <ol class="support-steps"><li>Install Praylendar from the App Store.</li><li>Create your profile in the Friends tab.</li><li>Come back to this page and tap <strong>Open in Praylendar</strong>. You will be friends right away.</li></ol>
+      <div class="hero-actions"><a class="primary-button" href="https://apps.apple.com/app/id6814939902">Get Praylendar</a><a class="secondary-button" href="praylendar://add" data-open-link>Open in Praylendar</a></div>
+    </article>
+  </main>
+  <script>
+    (function () {
+      var username = (new URLSearchParams(window.location.search).get('u') || '').toLowerCase().replace(/^@/, '');
+      if (!/^[a-z0-9_.]{3,20}$/.test(username)) return;
+      document.querySelector('[data-open-link]').href = 'praylendar://add?u=' + encodeURIComponent(username);
+      document.querySelector('[data-invite-line]').textContent = '@' + username + ' invited you to track the five daily prayers together and remind each other to pray.';
+    })();
+  </script>
+</body>
+</html>

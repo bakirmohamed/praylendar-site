@@ -1,0 +1,5 @@
+Contact: https://x.com/praylendar
+Expires: 2027-08-25T23:59:59Z
+Canonical: https://praylendar.com/.well-known/security.txt
+Policy: https://praylendar.com/privacy/
+Preferred-Languages: en, fr

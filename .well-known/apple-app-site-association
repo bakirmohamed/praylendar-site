@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["297LM8ZM3R.com.praylendar.app"],
+        "components": [
+          { "/": "/add/*", "comment": "Friend invite links" }
+        ]
+      }
+    ]
+  }
+}
