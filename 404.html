@@ -1,11 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#FAF6EF">
+  <script>document.write('<base href="' + (location.hostname.endsWith('github.io') ? '/' + location.pathname.split('/')[1] + '/' : '/') + '">');</script>
   <title>Page Not Found | Praylendar</title><meta name="robots" content="noindex, follow">
-  <link rel="icon" href="/images/praylendar-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Paytone+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="images/praylendar-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
-  <main class="not-found section-pad"><img src="/images/praylendar-icon.png" alt="Praylendar" width="112" height="112"><p class="eyebrow">404</p><h1>This page missed<br><span>the calendar.</span></h1><p>The Praylendar page you requested could not be found.</p><a class="primary-button" href="/">Back to Praylendar</a></main>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="container nav-shell">
+      <a class="brand" href="./" aria-label="Praylendar home">
+        <img src="images/icon-96.webp" alt="" width="36" height="36">
+        <span class="brand-word">Praylendar</span>
+      </a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-menu-button><span></span><span></span></button>
+      <nav class="main-nav" id="site-menu" aria-label="Main navigation" data-menu>
+        <a href="#features">Features</a>
+        <a href="#sisters">For sisters</a>
+        <a href="#friends">Friends</a>
+        <a href="faq/">FAQ</a>
+        <a class="nav-download" href="https://apps.apple.com/app/id6814939902">Download</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="center-page">
+      <div class="container">
+        <img class="app-icon" src="images/praylendar-icon.png" alt="Praylendar" width="104" height="104">
+        <p class="eyebrow" style="margin:0">404</p>
+        <h1>This page missed<br><span>the calendar.</span></h1>
+        <p class="lead">The Praylendar page you requested could not be found.</p>
+        <div class="button-row" style="justify-content:center"><a class="primary-button" href="./">Back to Praylendar</a><a class="secondary-button" href="faq/">Read the FAQ</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="./">
+            <img src="images/icon-96.webp" alt="" width="36" height="36">
+            <span class="brand-word">Praylendar</span>
+          </a>
+          <p>Your year in prayers. The five daily prayers, tracked on iPhone, one square at a time.</p>
+        </div>
+        <div class="footer-col"><strong>Product</strong><a href="how-it-works/">How it works</a><a href="prayer-tracker/">Prayer tracker</a><a href="prayer-calendar/">Prayer calendar</a><a href="#premium">Premium</a></div>
+        <div class="footer-col"><strong>Guides</strong><a href="guides/daily-prayer-checklist/">Daily prayer checklist</a><a href="guides/track-daily-prayers/">Track daily prayers</a><a href="guides/prayer-calendar-consistency/">Calendar consistency</a><a href="guides/">All guides</a></div>
+        <div class="footer-col"><strong>Support</strong><a href="contact/">Support</a><a href="faq/">FAQ</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="account-deletion/">Delete account</a></div>
+        <div class="footer-col"><strong>Social</strong><a href="https://x.com/praylendar" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.instagram.com/praylendar/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@praylendar" target="_blank" rel="noopener noreferrer">TikTok</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year>2026</span> Praylendar</span><span>Made for iPhone, in 8 languages</span></div>
+    </div>
+  </footer>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

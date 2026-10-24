@@ -3,65 +3,48 @@ const menuButton = document.querySelector('[data-menu-button]');
 const menu = document.querySelector('[data-menu]');
 
 const setHeaderState = () => {
-  header?.classList.toggle('scrolled', window.scrollY > 16);
+  header?.classList.toggle('scrolled', window.scrollY > 8);
 };
 
 setHeaderState();
 window.addEventListener('scroll', setHeaderState, { passive: true });
 
+const setMenu = (isOpen) => {
+  menu?.classList.toggle('open', isOpen);
+  menuButton?.setAttribute('aria-expanded', String(isOpen));
+  menuButton?.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+};
+
 menuButton?.addEventListener('click', () => {
-  const isOpen = menu.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
+  setMenu(!menu.classList.contains('open'));
 });
 
 menu?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('open');
-    menuButton?.setAttribute('aria-expanded', 'false');
-  });
+  link.addEventListener('click', () => setMenu(false));
 });
 
-document.querySelectorAll('.faq-item button').forEach((button) => {
-  button.addEventListener('click', () => {
-    const item = button.closest('.faq-item');
-    const willOpen = !item.classList.contains('open');
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menu?.classList.contains('open')) {
+    setMenu(false);
+    menuButton?.focus();
+  }
+});
 
-    document.querySelectorAll('.faq-item.open').forEach((openItem) => {
-      openItem.classList.remove('open');
-      openItem.querySelector('button')?.setAttribute('aria-expanded', 'false');
+document.addEventListener('click', (event) => {
+  if (!menu?.classList.contains('open')) return;
+  if (menu.contains(event.target) || menuButton?.contains(event.target)) return;
+  setMenu(false);
+});
+
+document.querySelectorAll('.faq-item').forEach((item) => {
+  item.addEventListener('toggle', () => {
+    if (!item.open) return;
+    item.closest('.faq-list')?.querySelectorAll('.faq-item[open]').forEach((other) => {
+      if (other !== item) other.open = false;
     });
-
-    if (willOpen) {
-      item.classList.add('open');
-      button.setAttribute('aria-expanded', 'true');
-    }
   });
 });
 
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
-
-const year = document.querySelector('[data-year]');
-if (year) year.textContent = new Date().getFullYear();
-
-document.querySelectorAll('.footer-links').forEach((footerLinks) => {
-  if (footerLinks.querySelector('.social-links')) return;
-
-  const socialLinks = document.createElement('div');
-  socialLinks.className = 'social-links';
-  socialLinks.innerHTML = `
-    <strong>Social</strong>
-    <a href="https://x.com/praylendar" target="_blank" rel="noopener noreferrer">X</a>
-    <a href="https://www.instagram.com/praylendar/" target="_blank" rel="noopener noreferrer">Instagram</a>
-    <a href="https://www.tiktok.com/@praylendar" target="_blank" rel="noopener noreferrer">TikTok</a>
-  `;
-  footerLinks.append(socialLinks);
+document.querySelectorAll('[data-year]').forEach((element) => {
+  element.textContent = new Date().getFullYear();
 });

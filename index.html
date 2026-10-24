@@ -3,34 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Praylendar is the colorful iPhone prayer tracker for Fajr, Dhuhr, Asr, Maghrib and Isha. Build a visual prayer calendar and share beautiful recaps.">
+  <meta name="description" content="Praylendar is the iPhone prayer tracker for Fajr, Dhuhr, Asr, Maghrib and Isha: prayer times, reminders, Qibla and Tasbih, and a calendar that fills up into your year in prayers.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Praylendar">
-  <meta name="theme-color" content="#fffdf7">
+  <meta name="theme-color" content="#FAF6EF">
   <title>Praylendar Prayer Tracker App | Track the 5 Daily Prayers</title>
   <link rel="canonical" href="https://praylendar.com/">
   <link rel="alternate" hreflang="en" href="https://praylendar.com/">
   <link rel="alternate" hreflang="x-default" href="https://praylendar.com/">
-  <link rel="icon" href="images/praylendar-icon.png">
-  <link rel="apple-touch-icon" href="images/praylendar-icon.png">
+  <link rel="icon" href="images/praylendar-icon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
   <link rel="manifest" href="site.webmanifest">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Praylendar">
-  <meta property="og:title" content="Praylendar - The Colorful Daily Prayer Tracker">
-  <meta property="og:description" content="Track the five daily prayers, see your consistency in a colorful calendar, and share clean prayer recaps.">
+  <meta property="og:title" content="Praylendar - Your Year in Prayers">
+  <meta property="og:description" content="Prayer times for your city, a reminder before each prayer, and a calendar that fills up, one square at a time, into your year in prayers.">
   <meta property="og:url" content="https://praylendar.com/">
   <meta property="og:image" content="https://praylendar.com/images/og-praylendar.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Praylendar prayer tracker app and colorful monthly prayer calendar">
+  <meta property="og:image:alt" content="Praylendar prayer tracker app with the Today screen and the year calendar">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Praylendar - The Colorful Daily Prayer Tracker">
-  <meta name="twitter:description" content="Track Fajr, Dhuhr, Asr, Maghrib and Isha in one calm, colorful iPhone calendar.">
+  <meta name="twitter:title" content="Praylendar - Your Year in Prayers">
+  <meta name="twitter:description" content="Track Fajr, Dhuhr, Asr, Maghrib and Isha with prayer times, reminders and a calendar that fills up into your year in prayers.">
   <meta name="twitter:image" content="https://praylendar.com/images/og-praylendar.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Paytone+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +41,7 @@
         "url": "https://praylendar.com/",
         "name": "Praylendar",
         "alternateName": ["Praylendar App", "Praylendar Prayer Tracker"],
-        "description": "A colorful iPhone tracker for the five daily Muslim prayers.",
+        "description": "An iPhone tracker for the five daily Muslim prayers, with prayer times, reminders, Qibla and Tasbih.",
         "inLanguage": "en"
       },
       {
@@ -51,19 +51,19 @@
         "alternateName": "Praylendar Prayer Tracker",
         "operatingSystem": "iOS",
         "applicationCategory": "LifestyleApplication",
-        "description": "Track Fajr, Dhuhr, Asr, Maghrib and Isha, build a color-coded prayer calendar, and export prayer recaps.",
+        "description": "Track Fajr, Dhuhr, Asr, Maghrib and Isha with prayer times calculated on your iPhone, reminders before each prayer, a year calendar, Qibla, Tasbih and shareable prayer cards.",
         "url": "https://praylendar.com/",
         "image": "https://praylendar.com/images/praylendar-icon.png",
         "screenshot": [
-          "https://praylendar.com/images/app-home.png",
-          "https://praylendar.com/images/app-log.png",
-          "https://praylendar.com/images/app-year.png"
+          "https://praylendar.com/images/screen-year.webp",
+          "https://praylendar.com/images/screen-today.webp",
+          "https://praylendar.com/images/screen-share.webp"
         ],
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD",
-          "description": "Free daily prayer tracking and calendar exports with optional premium features."
+          "description": "Free prayer tracking, prayer times, reminders and calendar sharing, with optional Premium monthly, yearly and lifetime plans."
         },
         "publisher": {"@type": "Organization", "name": "Praylendar", "url": "https://praylendar.com/"}
       }
@@ -72,293 +72,178 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
-    <div class="nav-shell">
+    <div class="container nav-shell">
       <a class="brand" href="#top" aria-label="Praylendar home">
-        <img src="images/praylendar-icon.png" alt="" width="42" height="42">
-        <span class="brand-word">praylendar</span>
+        <img src="images/icon-96.webp" alt="" width="36" height="36">
+        <span class="brand-word">Praylendar</span>
       </a>
-
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" aria-label="Main navigation" data-menu>
-        <a href="how-it-works/">How it works</a>
-        <a href="prayer-tracker/">Features</a>
-        <a href="guides/">Guides</a>
-        <a href="faq/">FAQ</a>
-        <a class="nav-download" href="#download">Get Praylendar <span aria-hidden="true">&#8599;</span></a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-menu-button><span></span><span></span></button>
+      <nav class="main-nav" id="site-menu" aria-label="Main navigation" data-menu>
+        <a href="#features">Features</a>
+        <a href="#sisters">For sisters</a>
+        <a href="#friends">Friends</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-download" href="https://apps.apple.com/app/id6814939902">Download</a>
       </nav>
     </div>
   </header>
-
-  <main id="top">
-    <section class="hero section-pad">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">THE COLORFUL PRAYER TRACKER</p>
-        <h1>Pray with intention.<br><span>See your consistency.</span></h1>
-        <p class="hero-intro">Check off Fajr, Dhuhr, Asr, Maghrib and Isha. Praylendar turns your days into one calm, colorful calendar that makes every return visible.</p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#download">
-            <span class="apple-mark" aria-hidden="true">&#63743;</span>
-            <span><small>Coming soon on the</small>App Store</span>
-          </a>
-          <a class="secondary-button" href="#how-it-works">See how it works <span aria-hidden="true">&#8595;</span></a>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">The salah tracker for iPhone</p>
+          <h1>Your year in prayers.</h1>
+          <p class="lead">Prayer times for your city, a gentle reminder before each prayer, and a calendar that fills up, one square at a time, into your year in prayers.</p>
+          <div class="button-row">
+            <a class="app-store-button" href="https://apps.apple.com/app/id6814939902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on the</small>App Store</span></a>
+            <a class="secondary-button" href="#features">See the features</a>
+          </div>
+          <ul class="hero-meta"><li>Free to download</li><li>8 languages</li><li>No ads, ever</li></ul>
         </div>
-        <p class="trust-line"><span aria-hidden="true">&#10003;</span> iPhone-first &nbsp;·&nbsp; Private by default</p>
-      </div>
-
-      <div class="hero-visual reveal" aria-label="Praylendar app preview">
-        <div class="phone phone-hero">
-          <div class="phone-speaker"></div>
-          <img src="images/app-home.png" alt="Praylendar home screen showing a monthly prayer calendar">
+        <div class="hero-shots">
+          <div class="shot shot-back"><img src="images/screen-year.webp" alt="Praylendar year calendar filled with prayer days" width="720" height="1327" fetchpriority="high" decoding="async"></div>
+          <div class="shot shot-front"><img src="images/screen-today.webp" alt="Praylendar Today screen with the next prayer countdown and the five daily prayers" width="720" height="1327" fetchpriority="high" decoding="async"></div>
         </div>
       </div>
     </section>
 
-    <section class="proof-band" aria-label="Praylendar promise">
-      <div class="proof-inner reveal">
-        <p class="proof-number">5</p>
-        <p class="proof-label">daily prayers,<br>one clear view.</p>
-        <div class="proof-palette" aria-hidden="true">
-          <i class="c0"></i><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><i class="c5"></i>
+    <section class="strip" aria-label="What is inside Praylendar">
+      <div class="container">
+        <ul class="strip-card"><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><strong>Prayer times</strong><span>Calculated on your iPhone</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 1 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span><strong>Reminders</strong><span>Before each prayer</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><strong>Year calendar</strong><span>Every prayer fills a square</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span><strong>Qibla</strong><span>A compass to the Kaaba</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="1.9"/><circle cx="17.6" cy="8" r="1.9"/><circle cx="17.6" cy="14.4" r="1.9"/><circle cx="12" cy="17.6" r="1.9"/><circle cx="6.4" cy="14.4" r="1.9"/><circle cx="6.4" cy="8" r="1.9"/><path d="M12 19.5v2"/></svg></span><strong>Tasbih</strong><span>33, 33, 34 after prayer</span></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.6-3.3 3-5.2 6-5.2s5.4 1.9 6 5.2"/><circle cx="17" cy="9" r="2.5"/><path d="M16.8 14.3c2.3.2 3.8 1.8 4.2 4.7"/></svg></span><strong>Friends</strong><span>Remind each other to pray</span></li></ul>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-label="Features">
+      <div class="container">
+        <div class="feature">
+          <div class="feature-media"><div class="shot"><img src="images/screen-today.webp" alt="Praylendar Today screen with a countdown to Asr and the five daily prayers with their times" width="720" height="1327" loading="lazy" decoding="async"></div></div>
+          <div class="feature-copy"><p class="eyebrow">Today</p><h2>Never miss a prayer.</h2><p class="lead">Today shows the five prayers with their times and a countdown to the next one. Tap a prayer once you have prayed it, and the day fills in.</p><ul class="check-list"><li>Times worked out on your iPhone, from your location or a city you choose</li><li>Pick the method your mosque follows, switch Asr to Hanafi, and adjust any prayer by a few minutes</li><li>A reminder at prayer time or 5 to 30 minutes before, for the prayers you choose</li><li>An evening check-in, and Fajr can break through Focus</li></ul></div>
+        </div>
+        <div class="feature reverse">
+          <div class="feature-media"><div class="shot"><img src="images/screen-year.webp" alt="Praylendar year calendar with every day of 2026 shaded by the number of prayers completed" width="720" height="1327" loading="lazy" decoding="async"></div></div>
+          <div class="feature-copy"><p class="eyebrow">Your calendar</p><h2>Every prayer fills a square.</h2><p class="lead">Read a month at a glance, or the whole year on one screen, with your streak, your perfect days and your totals. Days deepen in shade with each prayer, and turn gold when all five are done.</p><ul class="check-list"><li><strong>Nothing is lost.</strong> Forgot a prayer? Log it the next day and it is marked as made up. It still counts.</li><li><strong>Set a goal</strong> of 7, 14, 30 or 40 days of the five on time, and watch it fill in on Today.</li></ul><div class="legend" aria-label="Calendar colors"><span><i class="c0"></i>0</span><span><i class="c1"></i>1</span><span><i class="c2"></i>2</span><span><i class="c3"></i>3</span><span><i class="c4"></i>4</span><span><i class="c5"></i>All five</span><span><i class="cycle"></i>Cycle day</span></div></div>
         </div>
       </div>
     </section>
 
-    <section class="steps section-pad" id="how-it-works">
-      <div class="section-heading reveal">
-        <p class="eyebrow">HOW IT WORKS</p>
-        <h2>A prayer journal you can read <span>at a glance.</span></h2>
-        <p>No complicated setup. Open the day, check what you completed, and let your calendar tell the story.</p>
+    <section class="section sisters" id="sisters" aria-labelledby="sisters-title">
+      <div class="container">
+        <div class="feature">
+          <div class="feature-media"><figure class="month-card" aria-label="A month in Cycle mode: October with six hatched cycle days that are not counted as missed" style="margin:0">
+            <div class="month-card-head"><h3>October</h3><span>Streak paused, not lost</span></div>
+            <div class="month-grid" aria-hidden="true"><span class="dow">M</span><span class="dow">T</span><span class="dow">W</span><span class="dow">T</span><span class="dow">F</span><span class="dow">S</span><span class="dow">S</span><span class="blank"></span><span class="blank"></span><span class="blank"></span><span class="day c4">1</span><span class="day c5">2</span><span class="day c3">3</span><span class="day c4">4</span><span class="day c2">5</span><span class="day c4">6</span><span class="day c5">7</span><span class="day c3">8</span><span class="day c4">9</span><span class="day c4">10</span><span class="day c5">11</span><span class="day cycle">12</span><span class="day cycle">13</span><span class="day cycle">14</span><span class="day cycle">15</span><span class="day cycle">16</span><span class="day cycle">17</span><span class="day c3">18</span><span class="day c4">19</span><span class="day c5">20</span><span class="day c3">21</span><span class="day c4">22</span><span class="day c5">23</span><span class="day c2 today">24</span><span class="day future">25</span><span class="day future">26</span><span class="day future">27</span><span class="day future">28</span><span class="day future">29</span><span class="day future">30</span><span class="day future">31</span></div>
+            <div class="month-card-foot" aria-hidden="true"><span class="stat-chip"><i class="c5"></i>All five</span><span class="stat-chip"><i class="c3"></i>Partial day</span><span class="stat-chip"><i class="cycle"></i>Cycle day</span></div>
+          </figure></div>
+          <div class="feature-copy"><p class="eyebrow">For sisters</p><h2 id="sisters-title">Made for sisters too.</h2><p class="lead">Cycle mode marks the days when prayer is not required, so your calendar tells the truth without asking you to explain it.</p><ul class="check-list"><li>Cycle days are never counted as missed</li><li>Your streak pauses and waits for you</li><li>Cycle days stay on your phone. They are never uploaded or shown to friends.</li></ul></div>
+        </div>
       </div>
+    </section>
 
-      <article class="step-row reveal">
-        <div class="step-media sky-panel">
-          <div class="phone phone-step tilt-left">
-            <div class="phone-speaker"></div>
-            <img src="images/app-log.png" alt="Five daily prayer checklist in Praylendar">
+    <section class="section" aria-label="Sharing, Qibla, Tasbih, recap and themes">
+      <div class="container">
+        <div class="feature">
+          <div class="feature-media"><div class="shot"><img src="images/screen-share.webp" alt="Praylendar share screen with a My 2026 in Prayers card, period picker and language menu" width="720" height="1327" loading="lazy" decoding="async"></div></div>
+          <div class="feature-copy"><p class="eyebrow">Share</p><h2>Share your year.</h2><p class="lead">Turn a week, a month, 90 days, a goal or your whole year into a card or a story, ready for messages and social posts.</p><ul class="check-list"><li>Cards and stories in eight languages, including Arabic and Urdu</li><li>Post and story sizes, shared in one tap or saved to Photos</li><li>Sharing is free, for everyone</li></ul></div>
+        </div>
+        <div class="feature reverse">
+          <div class="feature-media pair"><div class="shot"><img src="images/screen-qibla.webp" alt="Praylendar Qibla compass showing 119 degrees and that you are facing the Qibla" width="720" height="1327" loading="lazy" decoding="async"></div><div class="shot"><img src="images/screen-tasbih.webp" alt="Praylendar Tasbih counter at 23 of 33 for SubhanAllah" width="720" height="1327" loading="lazy" decoding="async"></div></div>
+          <div class="feature-copy"><p class="eyebrow">Qibla and Tasbih</p><h2>Built in, right after prayer.</h2><p class="lead">A compass points to the Kaaba from wherever you are and tells you when you face it. The tasbih counts 33 SubhanAllah, 33 Alhamdulillah and 34 Allahu Akbar after each prayer.</p><ul class="check-list"><li>Qibla direction calculated on your iPhone</li><li>Rounds and a running total for your dhikr</li></ul></div>
+        </div>
+        <div class="feature">
+          <div class="feature-media"><div class="shot"><img src="images/screen-recap.webp" alt="Praylendar year recap with perfect days, longest streak and the share of prayers done" width="720" height="1327" loading="lazy" decoding="async"></div></div>
+          <div class="feature-copy"><p class="eyebrow">Year recap</p><h2>Look back on your year.</h2><p class="lead">At the end of the year, Praylendar looks back with you: your best month, your longest streak, your perfect days and the prayer that grew the most.</p><ul class="check-list"><li>Month by month, on one screen</li><li>Ready to share as a card or a story</li></ul></div>
+        </div>
+        <div class="feature reverse">
+          <div class="feature-media"><div class="shot"><img src="images/screen-themes.webp" alt="Praylendar Today screen in the Emerald theme" width="720" height="1327" loading="lazy" decoding="async"></div></div>
+          <div class="feature-copy"><p class="eyebrow">Themes <span class="pill gold" style="margin-left:6px;letter-spacing:0;text-transform:none">Premium</span></p><h2>Make it yours.</h2><p class="lead">Four app themes, Cream, Emerald, Ramadan and Plum, each with a matching app icon and matching share cards.</p><div class="theme-row"><figure><img src="images/theme-cream.webp" alt="Cream app icon" width="68" height="68" loading="lazy"><figcaption>Cream</figcaption></figure><figure><img src="images/theme-emerald.webp" alt="Emerald app icon" width="68" height="68" loading="lazy"><figcaption>Emerald</figcaption></figure><figure><img src="images/theme-ramadan.webp" alt="Ramadan app icon" width="68" height="68" loading="lazy"><figcaption>Ramadan</figcaption></figure><figure><img src="images/theme-plum.webp" alt="Plum app icon" width="68" height="68" loading="lazy"><figcaption>Plum</figcaption></figure></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section night" id="friends" aria-labelledby="friends-title">
+      <div class="container feature">
+        <div class="feature-copy"><p class="eyebrow">Friends</p><h2 id="friends-title">Pray together, if you want.</h2><p class="lead">Sign in with Apple to add friends by @username or with your invite link, see how their day is going, and send a gentle reminder when a prayer is still waiting.</p><ul class="check-list"><li>One tap sends &ldquo;reminded you to pray&rdquo;. No chat, no feed.</li><li>Block or report anyone from their friend page</li><li>Everything else works without an account</li></ul></div>
+        <div class="feature-media">
+          <div class="friends-mock" role="img" aria-label="Friends list with today's prayer counts and a Remind button, and a notification saying Yusuf reminded you to pray">
+            <div class="friends-card" aria-hidden="true">
+              <h3>Friends</h3>
+              <div class="friend"><span class="avatar">AM</span><div class="friend-info"><strong>Amina</strong><span>@amina &middot; 5 of 5 today</span></div><div class="bars full"><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="friend"><span class="avatar a2">YK</span><div class="friend-info"><strong>Yusuf</strong><span>@yusuf.k &middot; 3 of 5 today</span></div><div class="bars"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+              <div class="friend"><span class="avatar a3">SR</span><div class="friend-info"><strong>Sara</strong><span>@sara &middot; Asr is waiting</span></div><span class="nudge">Remind</span></div>
+            </div>
+            <div class="toast" aria-hidden="true"><img src="images/icon-96.webp" alt="" width="36" height="36"><div><strong>Yusuf reminded you to pray</strong><span>Praylendar &middot; now</span></div></div>
           </div>
         </div>
-        <div class="step-copy">
-          <span class="step-number">1</span>
-          <h3>Check off each prayer</h3>
-          <p>Fajr, Dhuhr, Asr, Maghrib and Isha each have their own place. Tap what you completed and save your day in seconds.</p>
-          <ul class="clean-list">
-            <li>Five clear prayer rows</li>
-            <li>Optional excused-day status</li>
-            <li>A single daily reminder, on your schedule</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="step-row reverse reveal">
-        <div class="step-media peach-panel">
-          <div class="phone phone-step tilt-right">
-            <div class="phone-speaker"></div>
-            <img src="images/app-home.png" alt="Monthly prayer calendar in Praylendar">
-          </div>
-        </div>
-        <div class="step-copy">
-          <span class="step-number">2</span>
-          <h3>Watch your month take shape</h3>
-          <p>Each color represents the number of prayers completed that day. Patterns become obvious without turning your faith into a spreadsheet.</p>
-          <div class="mini-legend" aria-label="Prayer count colors">
-            <span><i class="c0"></i>0</span><span><i class="c1"></i>1</span><span><i class="c2"></i>2</span>
-            <span><i class="c3"></i>3</span><span><i class="c4"></i>4</span><span><i class="c5"></i>5</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="step-row reveal">
-        <div class="step-media lilac-panel">
-          <div class="phone phone-step tilt-left">
-            <div class="phone-speaker"></div>
-            <img src="images/app-year.png" alt="Praylendar year view and shareable prayer card">
-          </div>
-        </div>
-        <div class="step-copy">
-          <span class="step-number">3</span>
-          <h3>Zoom out and share your progress</h3>
-          <p>See the full year, then export a week, month, 90 days or year as a clean prayer card made for sharing.</p>
-          <ul class="clean-list">
-            <li>Week, month, 90-day and year recaps</li>
-            <li>Multiple export languages</li>
-            <li>All exports included for everyone</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <section class="features section-pad" id="features">
-      <div class="section-heading reveal">
-        <p class="eyebrow">BUILT FOR A GENTLE RHYTHM</p>
-        <h2>Everything you need.<br><span>Nothing you do not.</span></h2>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card reveal">
-          <div class="feature-icon icon-check" aria-hidden="true">&#10003;</div>
-          <h3>Five-prayer checklist</h3>
-          <p>Log the five daily prayers without counters, forms or unnecessary steps.</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon icon-calendar" aria-hidden="true">31</div>
-          <h3>Month and year views</h3>
-          <p>Move from today to the full year while keeping the same simple color language.</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon icon-flame" aria-hidden="true">&#9832;</div>
-          <h3>Gentle streaks</h3>
-          <p>A small daily flame celebrates consistency without making a missed day feel final.</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon icon-share" aria-hidden="true">&#8593;</div>
-          <h3>Shareable prayer cards</h3>
-          <p>Turn your calendar into a polished recap sized for messages and social posts.</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon icon-friends" aria-hidden="true">&#9787;</div>
-          <h3>Private friends</h3>
-          <p>Add people you know, see their daily count and keep conversations one-to-one.</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon icon-bell" aria-hidden="true">&#9679;</div>
-          <h3>One calm reminder</h3>
-          <p>Choose a time to return to the app and complete the day when it suits you.</p>
-        </article>
       </div>
     </section>
 
-    <section class="reflection-band section-pad">
-      <div class="reflection-copy reveal">
-        <p class="eyebrow light">A CLEARER RECORD</p>
-        <h2>A gentle way<br>to come back.</h2>
-        <p>Praylendar is not here to judge a missed day. It gives each prayer a visible place, so progress feels concrete and returning always feels possible.</p>
-      </div>
-      <div class="reflection-calendar reveal" aria-hidden="true">
-        <div class="reflection-month">AUG 2026</div>
-        <div class="reflection-grid">
-          <i class="c5"></i><i class="c4"></i><i class="c5"></i><i class="c3"></i><i class="c5"></i><i class="c2"></i><i class="c4"></i>
-          <i class="c5"></i><i class="c5"></i><i class="c3"></i><i class="c4"></i><i class="c5"></i><i class="c5"></i><i class="c1"></i>
-          <i class="c4"></i><i class="c5"></i><i class="c2"></i><i class="c5"></i><i class="c4"></i><i class="c5"></i><i class="c5"></i>
-          <i class="c3"></i><i class="c5"></i><i class="c5"></i><i class="c4"></i><i class="c5"></i><i class="c5"></i><i class="c0"></i>
+    <section class="section" id="premium" aria-labelledby="premium-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Praylendar Premium</p>
+          <h2 id="premium-title">Free to use. Premium if you want more.</h2>
+          <p class="lead">Everything you need to keep the five is free. Premium adds the extras, with no ads, ever.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="friends-preview section-pad">
-      <div class="friends-copy reveal">
-        <p class="eyebrow">PRIVATE BY DESIGN</p>
-        <h2>Keep the people who matter <span>close.</span></h2>
-        <p>Sign in with Apple, add friends by name and share encouragement in simple private chats. Your prayer calendar stays yours.</p>
-        <div class="friend-chips" aria-label="Example friend statuses">
-          <span><b>AM</b> 5 prayers</span>
-          <span><b>SK</b> 4 prayers</span>
-          <span><b>YA</b> 5 prayers</span>
+        <ul class="free-list" aria-label="Free features"><li>Prayer times</li><li>Reminders</li><li>Month and year calendar</li><li>Goals</li><li>Cycle mode</li><li>Qibla</li><li>Tasbih</li><li>Sharing</li><li>Friends</li><li>Month widget</li></ul>
+        <ul class="premium-features"><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg></span><div><strong>Edit any past day</strong><span>Fix a day you forgot to log, at any time.</span></div></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 20.5h17"/><path d="M6.5 17v-5M11 17V7M15.5 17v-7.5M20 17V4.5"/></svg></span><div><strong>Insights and trends</strong><span>See which prayers are growing, month after month.</span></div></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2.2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2.2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2.2"/></svg></span><div><strong>Year and next prayer widgets</strong><span>On top of the month widget, which stays free.</span></div></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 0 17c1.2 0 1.9-.8 1.9-1.7 0-1.2-1-1.6-1-2.6 0-1 .8-1.5 1.8-1.5h2.3a3.5 3.5 0 0 0 3.5-3.5c0-4.3-3.8-7.7-8.5-7.7z"/><circle cx="7.6" cy="11" r="1"/><circle cx="10" cy="7.3" r="1"/><circle cx="14.6" cy="7.6" r="1"/></svg></span><div><strong>Four app themes</strong><span>Cream, Emerald, Ramadan and Plum, with icons and cards.</span></div></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></span><div><strong>Extra reminder sounds</strong><span>Choose how each reminder sounds.</span></div></li><li><span class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9 1 5.6L12 16.6l-5 2.6 1-5.6-4-3.9 5.5-.8z"/></svg></span><div><strong>A badge for friends</strong><span>Shown next to your name in Friends.</span></div></li></ul>
+        <div class="plans">
+          <article class="plan"><h3>Monthly</h3><p class="price">$4.99 <small>/ month</small></p><p>Billed every month. Cancel anytime.</p></article>
+          <article class="plan featured"><span class="badge">7 days free</span><h3>Yearly</h3><p class="price">$29.99 <small>/ year</small></p><p>Starts with a 7-day free trial. Half the price of monthly.</p></article>
+          <article class="plan"><h3>Lifetime</h3><p class="price">$59.99 <small>once</small></p><p>Pay once and keep Premium for good.</p></article>
         </div>
+        <p class="fine-print">Prices in US dollars; your local price is shown in the App Store. Subscriptions renew unless canceled at least 24 hours before the end of the current period, and can be managed in your Apple Account settings.</p>
       </div>
-      <div class="friends-phone-wrap reveal">
-        <div class="phone phone-friends">
-          <div class="phone-speaker"></div>
-          <img src="images/app-friends.png" alt="Praylendar Friends screen with Sign in with Apple">
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Questions</p>
+          <h2 id="faq-title">Straight answers.</h2>
         </div>
+        <div class="faq-list">
+          <details class="faq-item"><summary>Is Praylendar free?</summary><div class="faq-answer"><p>Yes. Tracking, prayer times, reminders, the calendar, goals, Cycle mode, Qibla, Tasbih, sharing, friends and the month widget are free. Premium adds editing of any past day, insights and trends, the year and next prayer widgets, four themes, extra reminder sounds and a badge.</p></div></details>
+          <details class="faq-item"><summary>Does Praylendar calculate prayer times?</summary><div class="faq-answer"><p>Yes. Times are calculated on your iPhone from your location or a city you choose, with the method your mosque follows. Your location is not sent to Praylendar's servers.</p></div></details>
+          <details class="faq-item"><summary>Do I need an account?</summary><div class="faq-answer"><p>No. Everything works without an account. Sign in with Apple is only needed for Friends.</p></div></details>
+          <details class="faq-item"><summary>What is Cycle mode?</summary><div class="faq-answer"><p>Cycle mode marks the days when prayer is not required. They are never counted as missed, your streak waits for you, and they stay on your phone.</p></div></details>
+          <details class="faq-item"><summary>Can friends see my calendar?</summary><div class="faq-answer"><p>No. Friends see your profile and a simple count of today's prayers, never your full calendar. They can send you a one-tap reminder to pray, and there is no chat.</p></div></details>
+          <details class="faq-item"><summary>Which languages does Praylendar support?</summary><div class="faq-answer"><p>English, French, Arabic, Spanish, Turkish, Indonesian, Malay and Urdu, in the app and on share cards.</p></div></details>
+        </div>
+        <p class="faq-more"><a class="secondary-button" href="faq/">All questions</a></p>
       </div>
     </section>
 
-    <section class="faq section-pad" id="faq">
-      <div class="section-heading reveal">
-        <p class="eyebrow">QUESTIONS, ANSWERED</p>
-        <h2>Simple app.<br><span>Straight answers.</span></h2>
-      </div>
-
-      <div class="faq-list reveal">
-        <article class="faq-item">
-          <button type="button" aria-expanded="false"><span>Is Praylendar free?</span><i aria-hidden="true">+</i></button>
-          <div class="faq-answer"><p>Yes. Daily tracking, the calendar and every export format are available for free. Premium unlocks editing older days.</p></div>
-        </article>
-        <article class="faq-item">
-          <button type="button" aria-expanded="false"><span>What do the calendar colors mean?</span><i aria-hidden="true">+</i></button>
-          <div class="faq-answer"><p>Each color represents a count from zero to five completed prayers. The legend is always visible beside your calendar and exports.</p></div>
-        </article>
-        <article class="faq-item">
-          <button type="button" aria-expanded="false"><span>Does Praylendar calculate prayer times?</span><i aria-hidden="true">+</i></button>
-          <div class="faq-answer"><p>No. Praylendar focuses on tracking. You can set one optional daily reminder to return and complete your journal.</p></div>
-        </article>
-        <article class="faq-item">
-          <button type="button" aria-expanded="false"><span>Can other people see my calendar?</span><i aria-hidden="true">+</i></button>
-          <div class="faq-answer"><p>Your full calendar is private. Friends you add can see a simple daily prayer count, and only the cards you choose to export are shared.</p></div>
-        </article>
-        <article class="faq-item">
-          <button type="button" aria-expanded="false"><span>Is there an Android version?</span><i aria-hidden="true">+</i></button>
-          <div class="faq-answer"><p>Praylendar is iPhone-first for now. The first release is being built specifically for iOS.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="guides-home section-pad" aria-labelledby="guides-heading">
-      <div class="section-heading reveal">
-        <p class="eyebrow">PRAYLENDAR GUIDES</p>
-        <h2 id="guides-heading">Build a prayer routine<br><span>that you can see.</span></h2>
-        <p>Practical, respectful guides about logging the five daily prayers and using a visual calendar without overcomplicating your worship.</p>
-      </div>
-      <div class="guide-grid">
-        <a class="guide-card reveal" href="guides/daily-prayer-checklist/">
-          <span class="guide-tag">Prayer checklist</span>
-          <h3>A Simple Checklist for the Five Daily Prayers</h3>
-          <p>One clear place for Fajr, Dhuhr, Asr, Maghrib and Isha.</p>
-          <b>Read the guide <span aria-hidden="true">&#8594;</span></b>
-        </a>
-        <a class="guide-card reveal" href="guides/track-daily-prayers/">
-          <span class="guide-tag">Tracking</span>
-          <h3>How to Track Daily Prayers Without Overcomplicating It</h3>
-          <p>A calm, practical way to build an honest prayer record.</p>
-          <b>Read the guide <span aria-hidden="true">&#8594;</span></b>
-        </a>
-        <a class="guide-card reveal" href="guides/prayer-calendar-consistency/">
-          <span class="guide-tag">Prayer calendar</span>
-          <h3>How a Prayer Calendar Makes Consistency Visible</h3>
-          <p>Why a monthly view can reveal patterns that memory misses.</p>
-          <b>Read the guide <span aria-hidden="true">&#8594;</span></b>
-        </a>
-      </div>
-      <p class="guides-all reveal"><a class="secondary-button" href="guides/">View all Praylendar guides <span aria-hidden="true">&#8594;</span></a></p>
-    </section>
-
-    <section class="download-cta section-pad" id="download">
-      <img class="cta-icon reveal" src="images/praylendar-icon.png" alt="Praylendar app icon">
-      <div class="cta-copy reveal">
-        <p class="eyebrow">COMING SOON TO IPHONE</p>
-        <h2>Make every prayer <span>visible.</span></h2>
-        <p>A calm, colorful record of the five prayers you complete each day.</p>
-        <a class="primary-button" href="#top">
-          <span class="apple-mark" aria-hidden="true">&#63743;</span>
-          <span><small>Coming soon on the</small>App Store</span>
-        </a>
+    <section class="cta-section" id="download">
+      <div class="container">
+        <div class="cta-card">
+          <img src="images/praylendar-icon.png" alt="Praylendar app icon" width="88" height="88" loading="lazy">
+          <h2>Start your year in prayers.</h2>
+          <p class="lead">Free on the App Store, for iPhone. Every prayer you log colors a square.</p>
+          <a class="app-store-button" href="https://apps.apple.com/app/id6814939902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on the</small>App Store</span></a>
+        </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <a class="brand brand-light" href="#top">
-          <img src="images/praylendar-icon.png" alt="" width="48" height="48">
-          <span class="brand-word">praylendar</span>
-        </a>
-        <p>Your five daily prayers, beautifully tracked.</p>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="./">
+            <img src="images/icon-96.webp" alt="" width="36" height="36">
+            <span class="brand-word">Praylendar</span>
+          </a>
+          <p>Your year in prayers. The five daily prayers, tracked on iPhone, one square at a time.</p>
+        </div>
+        <div class="footer-col"><strong>Product</strong><a href="how-it-works/">How it works</a><a href="prayer-tracker/">Prayer tracker</a><a href="prayer-calendar/">Prayer calendar</a><a href="#premium">Premium</a></div>
+        <div class="footer-col"><strong>Guides</strong><a href="guides/daily-prayer-checklist/">Daily prayer checklist</a><a href="guides/track-daily-prayers/">Track daily prayers</a><a href="guides/prayer-calendar-consistency/">Calendar consistency</a><a href="guides/">All guides</a></div>
+        <div class="footer-col"><strong>Support</strong><a href="contact/">Support</a><a href="faq/">FAQ</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="account-deletion/">Delete account</a></div>
+        <div class="footer-col"><strong>Social</strong><a href="https://x.com/praylendar" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.instagram.com/praylendar/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@praylendar" target="_blank" rel="noopener noreferrer">TikTok</a></div>
       </div>
-      <div class="footer-links">
-        <div><strong>Product</strong><a href="how-it-works/">How it works</a><a href="prayer-tracker/">Prayer tracker</a><a href="prayer-calendar/">Prayer calendar</a><a href="faq/">FAQ</a></div>
-        <div><strong>Guides</strong><a href="guides/daily-prayer-checklist/">Daily prayer checklist</a><a href="guides/track-daily-prayers/">Track daily prayers</a><a href="guides/prayer-calendar-consistency/">Prayer calendar</a><a href="guides/">All guides</a></div>
-        <div><strong>Support</strong><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="account-deletion/">Delete an account</a><a href="https://x.com/praylendar" target="_blank" rel="noopener noreferrer">Contact</a></div>
-        <div class="social-links"><strong>Social</strong><a href="https://x.com/praylendar" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.instagram.com/praylendar/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.tiktok.com/@praylendar" target="_blank" rel="noopener noreferrer">TikTok</a></div>
-      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year>2026</span> Praylendar</span><span>Made for iPhone, in 8 languages</span></div>
     </div>
-    <div class="footer-bottom"><span>&copy; <span data-year></span> Praylendar</span><span>Made for iPhone</span></div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>

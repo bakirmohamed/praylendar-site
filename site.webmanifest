@@ -1,17 +1,17 @@
 {
   "name": "Praylendar Prayer Tracker",
   "short_name": "Praylendar",
-  "description": "Track the five daily Muslim prayers in a colorful iPhone calendar.",
-  "start_url": "/",
+  "description": "Track the five daily Muslim prayers on iPhone, with prayer times, reminders and a calendar that fills up into your year in prayers.",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#fffdf7",
-  "theme_color": "#fffdf7",
+  "background_color": "#FAF6EF",
+  "theme_color": "#FAF6EF",
   "icons": [
     {
-      "src": "/images/praylendar-icon.png",
+      "src": "images/praylendar-icon.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
